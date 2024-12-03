@@ -1,0 +1,131 @@
+html {
+  font-family: Arial, sans-serif;
+  color: var(--primary-fg);
+  background-color: var(--primary-bg);
+
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-3) var(--secondary-bg);
+}
+
+a {
+  color: var(--highlight);
+}
+
+a:hover {
+  color: var(--accent-3);
+}
+
+header,
+footer,
+article,
+aside,
+main nav {
+  padding: 8px 20px;
+  margin: 12px 8px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-fg);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  color: var(--accent-3);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    margin: 0;
+    margin-top: 12px;
+  }
+}
+
+header nav ul {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+main :is(article, aside, nav) {
+  background-color: var(--secondary-bg);
+  color: var(--primary-fg);
+}
+
+main article :where(p, li) {
+  text-align: justify;
+}
+
+main li:not(:first-child) {
+  margin-top: 8px;
+}
+
+aside {
+  color: var(--secondary-fg);
+  text-align: center;
+}
+
+aside img {
+  filter: brightness(1.5);
+  background-color: var(--accent-2);
+  border: 2px solid var(--secondary-fg);
+  object-fit: contain;
+  border-radius: 90px;
+  margin: 8px 0px;
+}
+
+.dark aside img {
+  filter: brightness(0.8);
+}
+
+main :is(h2, h3) {
+  color: var(--accent-3);
+  margin: 0;
+  padding-top: 12px;
+}
+
+footer {
+  display: flex;
+  background-color: var(--secondary-bg);
+  color: var(--accent-3);
+  text-align: center;
+  padding: 24px 32px;
+}
+
+footer *:nth-child(2) {
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0px;
+  }
+
+  footer *:nth-child(2) {
+    order: 3;
+  }
+}

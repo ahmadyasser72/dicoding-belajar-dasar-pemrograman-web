@@ -1,0 +1,13 @@
+#read-progress-bar {
+  position: fixed;
+  inset: 0px;
+  height: 4px;
+  background-color: var(--highlight);
+  box-shadow: 0 2px 20px var(--accent-3);
+  z-index: 9999;
+
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transform: translateX(-100%);
+}

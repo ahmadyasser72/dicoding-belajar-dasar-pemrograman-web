@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/read-progress.css" />
+
+    <title>Ahmad Yasser | Submission | Belajar Dasar Pemrograman Web</title>
+  </head>
+  <body>
+    <div id="read-progress-bar"></div>
+
+    <header id="home">
+      <h1>Ahmad Yasser</h1>
+      <nav>
+        <ul>
+          <li><a href="#content">Content</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a id="toggle-theme" href="#">Dark Theme</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <nav id="toc"></nav>
+        <article>
+          <h2>Kenapa Perubahan Iklim itu Penting</h2>
+          <p>
+            Perubahan iklim itu seperti efek domino yang bisa mengancam banyak
+            aspek kehidupan kita. Misalnya suhu yang terus naik bisa bikin es di
+            kutub mencair, menyebabkan kenaikan permukaan laut yang mengancam
+            daerah pesisir dan pulau kecil. Tidak cuma itu, perubahan cuaca
+            ekstrem seperti banjir, kekeringan, dan badai juga jadi lebih
+            sering.
+          </p>
+          <p>
+            Kalau kita bertindak sekarang, kita bisa melindungi hidup yang lebih
+            aman buat semua.
+          </p>
+        </article>
+      </div>
+
+      <aside>
+        <h3 id="profile">Profil</h3>
+        <img
+          src="person.jpg"
+          width="200px"
+          height="200px"
+          alt="Foto KTP Ahmad Yasser"
+        />
+        <!-- sebagian konten aside dibawah digenerate oleh ChatGPT karena saya bingung mau isi apa lagi -->
+
+        <p>Nama saya Ahmad Yasser, berasal dari Kalimantan Selatan</p>
+        <p>
+          Saya seorang pengembang web dengan keahlian dalam HTML, CSS,
+          JavaScript, dan TypeScript. Saya memiliki pengalaman dalam membuat
+          aplikasi web responsif dan interaktif.
+        </p>
+
+        <!-- Kontak atau Media Sosial -->
+        <h4>Kontak</h4>
+        <p>
+          GitHub:
+          <a href="https://github.com/ahmadyasser72" target="_blank"
+            >@ahmadyasser72</a
+          >
+        </p>
+        <p>
+          Whatsapp:
+          <a href="https://wa.me/62887435034436" target="_blank"
+            >+62887435034436</a
+          >
+        </p>
+        <p>
+          Email:
+          <a href="mailto:ahmadyasser72@smk.belajar.id"
+            >ahmadyasser72@smk.belajar.id</a
+          >
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      <a onclick="()=> document.scrollingElement.scrollTo({top:0})" href="#">
+        Kembali keatas</a
+      >
+
+      <span>&copy; 2024 Ahmad Yasser</span>
+
+      <a
+        href="https://gist.github.com/ahmadyasser72/29e32a4fea9aef1a05b2c91ea6f72c78"
+        >Source Artikel (GitHub Gist)</a
+      >
+    </footer>
+
+    <script type="module" src="js/articles.js"></script>
+    <script type="module" src="js/articles-toc.js"></script>
+
+    <script src="js/read-progress.js"></script>
+    <script src="js/theme-toggle.js"></script>
+  </body>
+</html>
